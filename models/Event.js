@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 
 const eventSchema = new mongoose.Schema({
-  eventDateIn: String,
-  eventDateOut: String,
-  adults: String,
-  children: String,
+  fistName: String,
+  lastName: String,
+  appointmentdate: String,
+  appointmenttime: String,
+  phone: String,
+  message: String,
   createdAt: String
 }, { timestamps: true });
 

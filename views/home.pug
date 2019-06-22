@@ -116,29 +116,29 @@ html(lang='en')
                   h3 Open Monday-Friday
                   p 8:00am - 9:00pm
           .book.p-4
-            h3 Book a Table
-            form.appointment-form(action='#')
+            h3 Book a Table 
+            form.appointment-form(action='/event' method='POST')
               .d-md-flex
                 .form-group
-                  input.form-control(type='text', placeholder='First Name')
+                  input.form-control(name='fistName', type='text', placeholder='First Name')
                 .form-group.ml-md-4
-                  input.form-control(type='text', placeholder='Last Name')
+                  input.form-control(name='lastName',type='text', placeholder='Last Name')
               .d-md-flex
                 .form-group
                   .input-wrap
                     .icon
                       span.ion-md-calendar
-                    input.form-control.appointment_date(type='text', placeholder='Date')
+                    input.form-control.appointment_date(name='appointmentdate',type='text', placeholder='Date')
                 .form-group.ml-md-4
                   .input-wrap
                     .icon
                       span.ion-ios-clock
-                    input.form-control.appointment_time(type='text', placeholder='Time')
+                    input.form-control.appointment_time(name='appointmenttime', type='text', placeholder='Time')
                 .form-group.ml-md-4
-                  input.form-control(type='text', placeholder='Phone')
+                  input.form-control(name='phone',type='text', placeholder='Phone')
               .d-md-flex
                 .form-group
-                  textarea.form-control(name='', id='', cols='30', rows='2', placeholder='Message')
+                  textarea.form-control(name='message', id='', cols='30', rows='2', placeholder='Message')
                 .form-group.ml-md-4
                   input.btn.btn-white.py-3.px-4(type='submit', value='Appointment')
     section.ftco-about.d-md-flex
@@ -574,28 +574,28 @@ html(lang='en')
             #map
           .col-md-6.appointment.ftco-animate
             h3.mb-3 Book a Table
-            form.appointment-form(action='#')
+            form.appointment-form(action='/event' method='POST')
               .d-md-flex
                 .form-group
-                  input.form-control(type='text', placeholder='First Name')
+                  input.form-control(name='fistName',type='text', placeholder='First Name')
                 .form-group.ml-md-4
-                  input.form-control(type='text', placeholder='Last Name')
+                  input.form-control(name='lastName',type='text', placeholder='Last Name')
               .d-md-flex
                 .form-group
                   .input-wrap
                     .icon
                       span.ion-md-calendar
-                    input.form-control.appointment_date(type='text', placeholder='Date')
+                    input.form-control.appointment_date(name='appointmentdate',type='text', placeholder='Date')
                 .form-group.ml-md-4
                   .input-wrap
                     .icon
                       span.ion-ios-clock
-                    input.form-control.appointment_time(type='text', placeholder='Time')
+                    input.form-control.appointment_time(name='appointmenttime', type='text', placeholder='Time')
                 .form-group.ml-md-4
-                  input.form-control(type='text', placeholder='Phone')
+                  input.form-control(name='phone', type='text', placeholder='Phone')
               .d-md-flex
                 .form-group
-                  textarea.form-control(name='', id='', cols='30', rows='2', placeholder='Message')
+                  textarea.form-control(name='message', id='', cols='30', rows='2', placeholder='Message')
                 .form-group.ml-md-4
                   input.btn.btn-primary.py-3.px-4(type='submit', value='Appointment')
     footer.ftco-footer.ftco-section.img
